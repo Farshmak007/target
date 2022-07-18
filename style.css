@@ -1,0 +1,215 @@
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  list-style: none;
+  padding: 15px 25px;
+  border-radius: 5px;
+  background: #b8f2e6; 
+  margin-right: 10px;
+  text-align: center;
+  box-shadow: 4px 4px grey;
+}
+
+
+.sub {
+  text-decoration: none;
+  font-size: 24px;
+  color: #16393b;
+}
+
+
+
+/* ?Закрываем lightbox */
+.lightbox {
+    display: none;
+  }
+  
+  /*? Открываем lightbox */
+  .lightbox:target {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* ? Содержимое lightbox  */
+  .lightbox .registration {
+    width: 25rem;
+    position: relative;
+    padding: 1.5em;
+    border-radius: 7px;
+    background-image: linear-gradient(142deg, #E3FDF5 50%, #FFE6FA 50%);
+  }
+
+  .registration h2 {
+    text-align: center;
+    font-size: 40px;
+    color: #474747;
+    margin: 25px;
+    /* margin-top: 20px; */
+    /* margin-top: -10px; */
+    /* color: rgb(238, 238, 238); */
+  }
+
+  .registration form {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .registration fieldset {
+    padding: 0;
+    border: none;
+    margin: 0px 60px;
+  }
+
+  .registration input {
+    margin: 7px 0;
+    cursor:unset;
+  }
+  
+  .btn {
+    margin-top: 15px;
+    width: 275px;
+    padding: 8px 0px;
+    font-size: 16px;
+    background: #b8f2e6;
+    border: none;
+    border-radius: 5px;
+    color: #16393b;
+  }
+  
+  /* ::-webkit-input-placeholder { 
+    color: #000;
+ } */
+
+
+  [type="text"], [type="email"], [type="password"] {
+    border: none;
+    padding: 9px 10px 7.5px 10px;
+    border-bottom: 2px solid rgb(19, 18, 18);
+    background: none;
+    /* background-color: rgb(255, 253, 253); */
+    
+    outline: none;
+    width: 91%;
+  }
+  
+  /*? Кнопка закрытия */
+  .lightbox .close {
+    position: relative;
+    display: block;
+  }
+  
+  .lightbox .close::after {
+    right: -484px;
+    top: -209px;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    content: "×";
+    cursor: pointer;
+  }
+  
+  /*? Обёртка lightbox  */
+  .lightbox .close::before {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    /* background-color: rgba(0,0,0,.7); */
+    background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    content: "";
+    cursor: default;
+  }
+
+
+
+  .btn2 {
+    margin-top: 27px;
+  }
+  
+
+  .lightbox2  .close::after{
+    right: -484px;
+    top: -179px;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    content: "×";
+    cursor: pointer;
+  }
+
+/* ! */
+
+  /* p:target {
+    background-color: gold;
+    margin-left: 100px;
+  } */
+  
+  /*? Добавление псевдоэлемента внутрь target-элемента */
+  /* p:target::before {
+    font: 70% sans-serif;
+    content: "►";
+    color: limegreen;
+    margin-right: .25em;
+  } */
+  
+  /*? Стиль italic-элементов без target-элемента */
+  /* p:target i {
+    color: red;
+  } */
+
+
+
+
+ 
+
+
+  /* .btn {
+      width: 150px;
+    border: 2px solid red;
+  }
+
+    .link {
+    width: 100%;
+    font-size: 20px;
+    margin-left: 16px;
+  }
+
+  .btn:target{
+    background-color: gold;
+    transform: translateX(100px);
+  } */
+
